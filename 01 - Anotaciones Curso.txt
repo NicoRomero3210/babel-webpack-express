@@ -1,0 +1,19 @@
+Instalo webpack y babel
+
+npm i webpack webpack-dev-middleware babel-core babel-preset-es2015 babel-loader -D
+
+despues de esto creo la carpeta src y dentro de esta creo un archivo index.js que va a ser del front end.
+
+despues en la carpeta raiz del proyecto creo otro index que va a ser del back end y un archivo web.config.js
+
+Despues instalo express
+
+npm i express -S 
+
+el guion S me dice que se guarde en Dependencias
+
+Despues de esto creo la conexion del servidor en el archivo index.js como siemrpe nomas, requiriendo express y demas yerbas y empiezo a meterle mano al web.config.js donde especifico el nombre de mi archivo del servidor(index.js) y la ubicacion del archivo traducido con su nombre, ademas de eso vuelvo a definir el loader y esas cosas para la traduccion, aca agregue el devtool que es una especie de contenedor de errores
+
+A continuacion empiezo a exportar los modulos que voy a requerir para crear el middleware, primero le indico la carpeta static quie seria la public, despues traigo el webpack webpackmiddleware y el web.config.js al index js y ahi empeizo a crear el middleware. Ahi etrmino todo y le agrego algo al index.js del frontend para probar si todo corre tranca palanca
+
+
